@@ -1,0 +1,63 @@
+InpStr1="ACADGILD"
+lst1=[]
+for i in InpStr1:
+    lst1.append(i)
+print(lst1)    
+
+------------------------------------------------------------------------------
+
+InpStr3='xyz'
+lst3=[]
+for i in InpStr3:
+    for counter in range(1,5):
+        lst3.append(i*counter)
+print(lst3) 
+
+-----------------------------------------------------------------------------
+
+InpStr2='xyz'
+lst2=[]
+for counter in range(1,5):
+    for i in InpStr2:
+        lst2.append(i*counter)
+print(lst2)      
+
+-------------------------------------------------------------------------------
+
+lb=2
+ub=5
+loop=1
+lst4=[]
+while loop<4:
+    for i in range(lb,ub):
+        lst4.append([i])
+    loop+=1
+    lb+=1
+    ub+=1
+print(lst4)   
+
+-------------------------------------------------------------------------------
+
+lb=2
+ub=6
+lst5=[]
+oplst=[]
+loop=1
+while loop<5:
+    for i in range(lb,ub):
+        lst5.extend([i])
+    oplst.append(lst5)
+    lst5=[]
+    lb+=1
+    ub+=1
+    loop+=1
+print(oplst)
+
+------------------------------------------------------------------------------------
+
+lstop=[]
+for i in range(1,4):
+    for j in range(1,4):
+        tupx=(j,i)
+        lstop.append(tupx) 
+print(lstop)
